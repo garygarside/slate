@@ -1734,6 +1734,16 @@ curl "https://rest.goraise.co.uk/payments"
 > The above command returns JSON structured like this:
 
 ```json
+{
+  "total": 32,
+  "per_page": 100,
+  "current_page": 1,
+  "last_page": 1,
+  "next_page_url": null,
+  "prev_page_url": null,
+  "from": 1,
+  "to": 32,
+  "data": [
     {
       "id": 37,
       "groups_payment_details_id": 474,
@@ -1757,6 +1767,8 @@ curl "https://rest.goraise.co.uk/payments"
         },
       ]
     }
+  ]
+}
 ```
 
 > The above command returns XML structured like this:
